@@ -39,6 +39,7 @@ h2{
   padding: .5em 1em;
   border-radius: 10px;
   margin-block: 1em;
+  max-width: 80%;
 }
 
 .activities{
@@ -101,4 +102,26 @@ h2{
 }
 blockquote{
   font-style: italic;
+}
+
+@media (min-width:800px){
+  
+  .hero{
+    min-height: 60vh;
+  }
+  h2{
+    max-width: 60%;
+  }
+  .activities-content{
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1em;
+  }
+  .guide{
+    flex-direction: row;
+    max-width: 50%;
+    margin: 3em auto;
+  }
+  .guide img{
+    margin: 1em;
+  }
 }
